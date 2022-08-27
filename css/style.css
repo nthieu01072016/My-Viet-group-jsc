@@ -39,24 +39,24 @@ body {
 
 /* TOP-NAV */
 
-#header #topnav {
+#header #nav {
     background-color: #fff;
     flex: 60%;
 }
 
-#header #topnav .main-menu {
+#header #nav .main-menu {
     display: flex;
     list-style: none;
     margin-bottom: 0;
 }
 
-#header #topnav .main-menu li {
+#header #nav .main-menu li {
     position: relative;
     margin-right: 32px;
 }
 
 /* Style the links inside the navigation bar */
-#header #topnav .main-menu li a {
+#header #nav .main-menu li a {
     color: #222;
     text-align: center;
     margin: 30px 15px;
@@ -66,34 +66,34 @@ body {
     display: block;
 }
 
-#header #topnav .main-menu .sub-menu {
+#header #nav .main-menu .sub-menu {
     position: absolute;
     display: none;
     background: #fff;
     min-width: 200px;
 }
 
-#header #topnav .main-menu .sub-menu>li>a:first-child {
+#header #nav .main-menu .sub-menu>li>a:first-child {
     margin-top: 0;
 }
 
-#header #topnav .main-menu .sub-menu .sub-menu {
+#header #nav .main-menu .sub-menu .sub-menu {
     left: 163px;
     min-width: 200px;
     top: 0;
 }
 
-#header #topnav .main-menu li:hover>.sub-menu {
+#header #nav .main-menu li:hover>.sub-menu {
     display: block;
 }
 
 /* Change the color of links on hover */
-#header #topnav .main-menu li a:hover {
+#header #nav .main-menu li a:hover {
     color: #dca447;
 }
 
 /* Add a color to the active/current link */
-#header #topnav .main-menu li a.active {
+#header #nav .main-menu li a.active {
     border-bottom: 3px solid #dca447;
 }
 
@@ -206,19 +206,16 @@ body {
 .slogan .box-1 {
     max-width: 810px;
     margin: 0px auto;
+    font-size: 50%
 }
 
-.slogan .box-2 {
+#content .slogan .box-2 {
     background: #fff;
     border-radius: 3px;
     max-width: 1133px;
     margin: 20px auto;
     border: 1px solid #dca4474d;
     display: flex;
-}
-
-
-.slogan .box-2 {
     border-right: 1px solid #eeeeee;
 }
 
@@ -459,6 +456,7 @@ img {
 
 }
 
+
 /* FOOTER */
 
 #wp-footer {
@@ -516,7 +514,7 @@ img {
     margin-bottom: 0;
 }
 
-/* SMALL SCREEN */
+
 
 #toggle {
     color: black;
@@ -527,21 +525,90 @@ img {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
-    #wrapper {
-        width: 100%;
-    }
 
+/* SMALL SCREEN */
+
+@media screen and (max-width: 450px) {
     #header {
-        flex-direction: column;
+        flex-direction: row;
+        position: static;
+        align-items: center;
     }
 
-    #toggle {
+    #header #form-search {
+        order: 1;
+        justify-content: flex-end;
+    }
+
+    #header #form-search input {
+        position: absolute;
+        display: none;
+        left: 191px;
+        font-size: 9px;
+    }
+
+    #header #form-search input[type=text]:focus {
+        width: 130px;
+    }
+
+
+    #header #form-search button {
+        position: relative;
+    }
+
+
+    #header #toggle {
+        display: inline-block;
+        order: 2;
+    }
+
+    #header #nav {
+        display: none;
+        position: absolute;
+        top: 85px;
+        right: -10px;
+        z-index: 3;
+    }
+
+    #header #nav .main-menu {
         display: block;
     }
 
-    #topnav {
-        display: none;
+    #header #nav .main-menu li {
+        margin-right: 0;
+    }
+
+    #header .slogan .box-2 {
+        flex-wrap: wrap;
+    }
+
+    #content .slogan .box-2 a {
+        width: 100%;
+        height: 115px;
+        border-right: none;
+        border-bottom: 1px solid #eeeeee;
+        height: 79px;
+    }
+
+    #content .banner {
+        margin-top: 0;
+    }
+
+    #content .banner .banner-text {
+        bottom: 0;
+        font-size: 9px;
+    }
+
+    #content .banner h1 {
+        font-size: 9px;
+    }
+
+    #content .slogan .box-2 {
+        flex-direction: column;
+    }
+
+    #content .slogan .box-2 a div {
+        font-size: 9px;
     }
 
 }
