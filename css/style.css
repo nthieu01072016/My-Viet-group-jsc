@@ -12,8 +12,13 @@ ul {
     padding: 0;
 }
 
-body {
 
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
     font-family: "Open Sans";
 }
 
@@ -372,7 +377,7 @@ img {
 /* DISPLAY-CONTENT */
 
 .wp-display-content {
-    width: 1170px;
+    max-width: 1170px;
     display: flex;
     margin: 0px auto;
     justify-content: space-between;
@@ -529,8 +534,13 @@ img {
 /* SMALL SCREEN */
 
 @media screen and (max-width: 450px) {
+
+    html,
+    body {
+        font-size: 9px;
+    }
+
     #header {
-        flex-direction: row;
         position: static;
         align-items: center;
     }
@@ -578,8 +588,19 @@ img {
         margin-right: 0;
     }
 
-    #header .slogan .box-2 {
-        flex-wrap: wrap;
+    #header #nav .main-menu li a {
+        color: #222;
+        text-align: left;
+        margin: 30px 0px;
+        margin-left: 10px;
+        margin-right: 53px;
+        font-size: 17px;
+        font-weight: 600;
+        display: block;
+    }
+
+    #header #nav .main-menu .sub-menu {
+        right: 164px;
     }
 
     #content .slogan .box-2 a {
@@ -609,6 +630,68 @@ img {
 
     #content .slogan .box-2 a div {
         font-size: 9px;
+
     }
+
+    #content .box-4 .box-4-1 .box-4-1-1 {
+        font-size: 9px;
+        margin-left: 20px;
+    }
+
+    #content .box-4 .box-4-1 .box-4-1-2 {
+        font-size: 9px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 378px;
+    }
+
+    #content .box-4 .box-4-1 .box-4-1-btn {
+        margin-left: 20px;
+        font-size: 9px;
+    }
+
+    #content .slideshow-container .mySlides .numbertext {
+        font-size: 9px;
+    }
+
+    #content .slideshow-container .mySlides .text {
+        font-size: 9px;
+    }
+
+    #content .wp-display-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #content .wp-display-content .display-content {
+        margin-top: 20px;
+    }
+
+    #content .wp-display-content .display-content .content a {
+        font-size: 9px;
+    }
+
+    #content .wp-display-content .display-content .content .excerpt {
+        font-size: 9px;
+    }
+
+    #wp-footer #footer {
+        flex-direction: column;
+    }
+
+    #wp-footer #footer #about-us {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #wp-footer #footer #follow-us {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+
+    #wp-footer #footer #follow-us .box-body .list-social li a {
+        font-size: 36px;
+    }
+
 
 }
