@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="rules/reset.css">
     <link rel="stylesheet" href="plugin/fontawesome/css/all.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Ohmygod help me</title>
+    <title>Document</title>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
             <div id="toggle">
                 <i class="fa-solid fa-bars"></i>
             </div>
-            <div id="topnav">
+            <div id="nav">
                 <ul class="main-menu">
                     <li><a class="btn" href="#home">Trang chủ</a></li>
                     <li><a class="btn" href="#news">Tin tức</a>
@@ -46,12 +46,11 @@
                     </li>
                     <li><a class="btn" href="#contact">Liên hệ</a></li>
                     <li><a class="btn" href="#about">Về chúng tôi</a></li>
-                    <li><a class="btn" href="#home">Trang chủ</a></li>
                 </ul>
             </div>
             <form action="#" id="form-search">
-                <input type="text" name="search" placeholder="Tìm kiếm..">
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input class="input" type="text" name="search" placeholder="Tìm kiếm..">
+                <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
 
@@ -66,9 +65,6 @@
                 <div class="banner-text">
                     <h3>Lorem ipsum dolor sit amet.</h3>
                 </div>
-                <!-- <div class="animate-text">
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, blanditiis!</h3>
-                </div> -->
                 <h1>story about dogs</h1>
             </div>
 
@@ -243,7 +239,7 @@
 
             //If you do not have an active class set on the button element to start with, use the following code:
             // Get the container element
-            var btnContainer = document.getElementById("topnav");
+            var btnContainer = document.getElementById("nav");
 
             // Get all buttons with class="btn" inside the container
             var btns = btnContainer.getElementsByClassName("btn");
@@ -378,9 +374,16 @@
 
             $(document).ready(function () {//khi website load xong thì thực hiện hàm
                 $('#toggle').click(function () {//khi click vào nút toggle thì thực hiện hàm
-                    $('#topnav').slideToggle();
+                    $('#nav').slideToggle();
                 })
             })
+
+            $(document).ready(function () {//khi website load xong thì thực hiện hàm
+                $('.btn').click(function () {//khi click vào nút toggle thì thực hiện hàm
+                    $('.input').toggle();
+                })
+            })
+
         </script>
 
 </body>
