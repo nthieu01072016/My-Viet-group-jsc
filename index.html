@@ -50,7 +50,7 @@
             </div>
             <form action="#" id="form-search">
                 <input class="input" type="text" name="search" placeholder="Tìm kiếm..">
-                <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
 
@@ -61,7 +61,8 @@
             <!-- BANNER -->
 
             <div class="banner">
-                <img src="images/bds.jpg" alt="">
+                <img class="img-1" src="images/bds.jpg" alt="">
+                <img class="img-2" src="images/bds-2.jpg" alt="">
                 <div class="banner-text">
                     <h3>Lorem ipsum dolor sit amet.</h3>
                 </div>
@@ -379,8 +380,8 @@
             })
 
             $(document).ready(function () {//khi website load xong thì thực hiện hàm
-                $('.btn').click(function () {//khi click vào nút toggle thì thực hiện hàm
-                    $('.input').toggle();
+                $('.btn-search').click(function () {//khi click vào hình kính lúp thì thực hiện hàm
+                    $('.input').slideToggle();
                 })
             })
 
