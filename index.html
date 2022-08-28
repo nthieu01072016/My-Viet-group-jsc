@@ -61,8 +61,11 @@
             <!-- BANNER -->
 
             <div class="banner">
-                <img class="img-1" src="images/bds.jpg" alt="">
-                <img class="img-2" src="images/bds-2.jpg" alt="">
+                <picture>
+                    <source media="(min-width: 650px)" srcset="images/bds.jpg">
+                    <source media="(min-width: 390px)" srcset="images/bds-2.jpg">
+                    <img src="images/bds.jpg">
+                </picture>
                 <div class="banner-text">
                     <h3>Lorem ipsum dolor sit amet.</h3>
                 </div>
