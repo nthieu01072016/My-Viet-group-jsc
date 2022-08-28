@@ -145,15 +145,6 @@ body {
     z-index: 1;
 }
 
-#content .banner .img-1 {
-    width: 100%;
-    height: 100%
-}
-
-#content .banner .img-2 {
-    display: none;
-}
-
 #content .banner::before {
     content: '';
     position: absolute;
@@ -604,14 +595,6 @@ img {
 
     #content .banner {
         margin-top: 0;
-    }
-
-    #content .banner .img-1 {
-        display: none;
-    }
-
-    #content .banner .img-2 {
-        display: block;
     }
 
     #content .banner .banner-text {
