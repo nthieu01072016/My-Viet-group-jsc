@@ -14,11 +14,11 @@ ul {
 
 
 html {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     font-family: "Open Sans";
 }
 
@@ -145,9 +145,13 @@ body {
     z-index: 1;
 }
 
-#content .banner img {
+#content .banner .img-1 {
     width: 100%;
     height: 100%
+}
+
+#content .banner .img-2 {
+    display: none;
 }
 
 #content .banner::before {
@@ -182,7 +186,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    font-size: 13px;
+    font-size: 20px;
 }
 
 
@@ -211,7 +215,6 @@ body {
 .slogan .box-1 {
     max-width: 810px;
     margin: 0px auto;
-    font-size: 50%
 }
 
 #content .slogan .box-2 {
@@ -231,7 +234,6 @@ body {
     border-right: 1px solid #eeeeee;
 
 }
-
 
 .slogan .box-2 a img {
     max-width: 40px;
@@ -262,7 +264,7 @@ body {
 }
 
 .box-4 .box-4-1 {
-    width: 1170px;
+    max-width: 1170px;
     margin: 0px auto;
     margin-bottom: 40px;
 }
@@ -537,7 +539,7 @@ img {
 
     html,
     body {
-        font-size: 9px;
+        font-size: 16px;
     }
 
     #header {
@@ -554,7 +556,6 @@ img {
         position: absolute;
         display: none;
         left: 191px;
-        font-size: 9px;
     }
 
     #header #form-search input[type=text]:focus {
@@ -565,7 +566,6 @@ img {
     #header #form-search button {
         position: relative;
     }
-
 
     #header #toggle {
         display: inline-block;
@@ -594,7 +594,6 @@ img {
         margin: 30px 0px;
         margin-left: 10px;
         margin-right: 53px;
-        font-size: 17px;
         font-weight: 600;
         display: block;
     }
@@ -603,60 +602,72 @@ img {
         right: 164px;
     }
 
+    #content .banner {
+        margin-top: 0;
+    }
+
+    #content .banner img {
+        display: none;
+    }
+
+    #content .banner .img-2 {
+        display: block;
+    }
+
+    #content .banner .banner-text {
+        line-height: 20px;
+        bottom: 95px;
+        letter-spacing: 0;
+        font-size: 16px;
+        min-width: 307px;
+    }
+
+    #content .banner h1 {
+        font-size: 13px;
+        bottom: 70px;
+        min-width: 244px;
+    }
+
+    #content .slogan {
+        margin: 24px;
+    }
+
+    #content .slogan .box-1 {}
+
+    #content .slogan .box-2 {
+        flex-direction: column;
+    }
+
     #content .slogan .box-2 a {
         width: 100%;
         height: 115px;
         border-right: none;
         border-bottom: 1px solid #eeeeee;
         height: 79px;
+        padding: 13px;
     }
 
-    #content .banner {
-        margin-top: 0;
-    }
-
-    #content .banner .banner-text {
-        bottom: 0;
-        font-size: 9px;
-    }
-
-    #content .banner h1 {
-        font-size: 9px;
-    }
-
-    #content .slogan .box-2 {
-        flex-direction: column;
-    }
-
-    #content .slogan .box-2 a div {
-        font-size: 9px;
-
-    }
+    #content .slogan .box-2 a div {}
 
     #content .box-4 .box-4-1 .box-4-1-1 {
-        font-size: 9px;
         margin-left: 20px;
+        margin-right: 20px;
     }
 
     #content .box-4 .box-4-1 .box-4-1-2 {
-        font-size: 9px;
         margin-left: 20px;
         margin-right: 20px;
-        width: 378px;
+        font-size: 16px;
     }
 
     #content .box-4 .box-4-1 .box-4-1-btn {
         margin-left: 20px;
-        font-size: 9px;
+
     }
 
-    #content .slideshow-container .mySlides .numbertext {
-        font-size: 9px;
-    }
+    #content .slideshow-container .mySlides .numbertext {}
 
-    #content .slideshow-container .mySlides .text {
-        font-size: 9px;
-    }
+    #content .slideshow-container .mySlides .text {}
 
     #content .wp-display-content {
         flex-direction: column;
@@ -667,13 +678,13 @@ img {
         margin-top: 20px;
     }
 
-    #content .wp-display-content .display-content .content a {
-        font-size: 9px;
+    .wp-display-content .display-content .content h3 {
+        font-size: 16px;
     }
 
-    #content .wp-display-content .display-content .content .excerpt {
-        font-size: 9px;
-    }
+    #content .wp-display-content .display-content .content a {}
+
+    #content .wp-display-content .display-content .content .excerpt {}
 
     #wp-footer #footer {
         flex-direction: column;
