@@ -13,9 +13,9 @@ ul {
 }
 
 
-html {
-    /* overflow-x: hidden; */
-}
+/* html {
+    overflow-x: hidden;
+} */
 
 body {
     /* overflow-x: hidden; */
@@ -59,6 +59,17 @@ body {
     position: relative;
     margin-right: 32px;
 }
+
+/* #header #nav .main-menu li.has-child::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f107";
+    color: #717171;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 18px 0px;
+} */
 
 /* Style the links inside the navigation bar */
 #header #nav .main-menu li a {
@@ -135,6 +146,10 @@ body {
     color: #8c8c8c;
 }
 
+#header #form-search .input.active {
+    display: block;
+}
+
 /* CONTENT */
 
 /* BANNER */
@@ -152,6 +167,11 @@ body {
     height: 100%;
     background-image: linear-gradient(to top, rgba(0, 0, 0, .3), rgba(0, 0, 0, .2), rgba(0, 0, 0, .1), rgba(0, 0, 0, 0));
     bottom: 0;
+}
+
+#content .banner img {
+    width: 100%;
+    height: auto;
 }
 
 #content .banner .banner-text {
@@ -525,6 +545,317 @@ img {
 
 
 /* SMALL SCREEN */
+@media (max-width:991px) {
+
+    html,
+    body {
+        font-size: 16px;
+    }
+
+    #header {
+        position: static;
+        align-items: center;
+    }
+
+    #header #form-search {
+        order: 1;
+        justify-content: flex-end;
+    }
+
+    #header #form-search input {
+        position: absolute;
+        display: none;
+        left: 191px;
+    }
+
+    #header #form-search input[type=text]:focus {
+        width: 130px;
+    }
+
+
+    #header #form-search button {
+        position: relative;
+    }
+
+    #header #toggle {
+        display: inline-block;
+        order: 2;
+    }
+
+    #header #nav {
+        display: none;
+        position: absolute;
+        top: 85px;
+        left: 0;
+        right: 0;
+        z-index: 3;
+    }
+
+    #header #nav .main-menu {
+        display: block;
+    }
+
+    #header #nav .main-menu li {
+        margin-right: 0;
+    }
+
+    #header #nav .main-menu li a {
+        color: #222;
+        text-align: left;
+        margin: 30px 0px;
+        margin-left: 10px;
+        margin-right: 53px;
+        font-weight: 600;
+        display: block;
+    }
+
+    #header #nav .main-menu .sub-menu {
+        right: 164px;
+    }
+
+    #content .banner {
+        margin-top: 0;
+    }
+
+    #content .banner img {
+        width: 100%;
+        height: auto;
+    }
+
+    #content .banner .banner-text {
+        line-height: 20px;
+        bottom: 95px;
+        letter-spacing: 0;
+        font-size: 16px;
+        min-width: 307px;
+    }
+
+    #content .banner h1 {
+        font-size: 13px;
+        bottom: 70px;
+        min-width: 244px;
+    }
+
+    #content .slogan {
+        margin: 24px;
+    }
+
+    #content .slogan .box-2 {
+        flex-direction: column;
+    }
+
+    #content .slogan .box-2 a {
+        width: 100%;
+        height: 115px;
+        border-right: none;
+        border-bottom: 1px solid #eeeeee;
+        height: 79px;
+        padding: 13px;
+    }
+
+    #content .box-4 .box-4-1 .box-4-1-1 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #content .box-4 .box-4-1 .box-4-1-2 {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 16px;
+    }
+
+    #content .box-4 .box-4-1 .box-4-1-btn {
+        margin-left: 20px;
+
+    }
+
+    #content .wp-display-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #content .wp-display-content .display-content {
+        margin-top: 20px;
+    }
+
+    .wp-display-content .display-content .content h3 {
+        font-size: 16px;
+    }
+
+    #wp-footer #footer {
+        flex-direction: column;
+    }
+
+    #wp-footer #footer #about-us {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #wp-footer #footer #follow-us {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+
+    #wp-footer #footer #follow-us .box-body .list-social li a {
+        font-size: 36px;
+    }
+}
+
+@media (max-width:768px) {
+
+    html,
+    body {
+        font-size: 16px;
+    }
+
+    #header {
+        position: static;
+        align-items: center;
+    }
+
+    #header #form-search {
+        order: 1;
+        justify-content: flex-end;
+    }
+
+    #header #form-search input {
+        position: absolute;
+        display: none;
+        left: 191px;
+    }
+
+    #header #form-search input[type=text]:focus {
+        width: 130px;
+    }
+
+
+    #header #form-search button {
+        position: relative;
+    }
+
+    #header #toggle {
+        display: inline-block;
+        order: 2;
+    }
+
+    #header #nav {
+        display: none;
+        position: absolute;
+        top: 85px;
+        left: 0;
+        right: 0;
+        z-index: 3;
+    }
+
+    #header #nav .main-menu {
+        display: block;
+    }
+
+    #header #nav .main-menu li {
+        margin-right: 0;
+    }
+
+    #header #nav .main-menu li a {
+        color: #222;
+        text-align: left;
+        margin: 30px 0px;
+        margin-left: 10px;
+        margin-right: 53px;
+        font-weight: 600;
+        display: block;
+    }
+
+    #header #nav .main-menu .sub-menu {
+        right: 164px;
+    }
+
+    #content .banner {
+        margin-top: 0;
+    }
+
+    #content .banner img {
+        width: 100%;
+        height: auto;
+    }
+
+    #content .banner .banner-text {
+        line-height: 20px;
+        bottom: 95px;
+        letter-spacing: 0;
+        font-size: 16px;
+        min-width: 307px;
+    }
+
+    #content .banner h1 {
+        font-size: 13px;
+        bottom: 70px;
+        min-width: 244px;
+    }
+
+    #content .slogan {
+        margin: 24px;
+    }
+
+    #content .slogan .box-2 {
+        flex-direction: column;
+    }
+
+    #content .slogan .box-2 a {
+        width: 100%;
+        height: 115px;
+        border-right: none;
+        border-bottom: 1px solid #eeeeee;
+        height: 79px;
+        padding: 13px;
+    }
+
+    #content .box-4 .box-4-1 .box-4-1-1 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #content .box-4 .box-4-1 .box-4-1-2 {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 16px;
+    }
+
+    #content .box-4 .box-4-1 .box-4-1-btn {
+        margin-left: 20px;
+
+    }
+
+    #content .wp-display-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #content .wp-display-content .display-content {
+        margin-top: 20px;
+    }
+
+    .wp-display-content .display-content .content h3 {
+        font-size: 16px;
+    }
+
+    #wp-footer #footer {
+        flex-direction: column;
+    }
+
+    #wp-footer #footer #about-us {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #wp-footer #footer #follow-us {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+
+    #wp-footer #footer #follow-us .box-body .list-social li a {
+        font-size: 36px;
+    }
+}
 
 @media screen and (max-width: 450px) {
 
@@ -567,7 +898,8 @@ img {
         display: none;
         position: absolute;
         top: 85px;
-        right: -10px;
+        left: 0;
+        right: 0;
         z-index: 3;
     }
 
@@ -597,6 +929,11 @@ img {
         margin-top: 0;
     }
 
+    #content .banner img {
+        width: 100%;
+        height: auto;
+    }
+
     #content .banner .banner-text {
         line-height: 20px;
         bottom: 95px;
@@ -615,8 +952,6 @@ img {
         margin: 24px;
     }
 
-    #content .slogan .box-1 {}
-
     #content .slogan .box-2 {
         flex-direction: column;
     }
@@ -629,8 +964,6 @@ img {
         height: 79px;
         padding: 13px;
     }
-
-    #content .slogan .box-2 a div {}
 
     #content .box-4 .box-4-1 .box-4-1-1 {
         margin-left: 20px;
@@ -648,10 +981,6 @@ img {
 
     }
 
-    #content .slideshow-container .mySlides .numbertext {}
-
-    #content .slideshow-container .mySlides .text {}
-
     #content .wp-display-content {
         flex-direction: column;
         align-items: center;
@@ -664,10 +993,6 @@ img {
     .wp-display-content .display-content .content h3 {
         font-size: 16px;
     }
-
-    #content .wp-display-content .display-content .content a {}
-
-    #content .wp-display-content .display-content .content .excerpt {}
 
     #wp-footer #footer {
         flex-direction: column;
@@ -686,6 +1011,4 @@ img {
     #wp-footer #footer #follow-us .box-body .list-social li a {
         font-size: 36px;
     }
-
-
 }
