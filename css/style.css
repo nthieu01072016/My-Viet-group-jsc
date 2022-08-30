@@ -158,6 +158,10 @@ body {
     position: relative;
     margin-top: 85px;
     z-index: 1;
+    background:url(../images/bds.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 75vh;
 }
 
 #content .banner::before {
