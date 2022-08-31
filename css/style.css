@@ -173,7 +173,7 @@ body {
 #content .banner {
     position: relative;
     z-index: 1;
-    background: url(../images/bds.jpg) no-repeat;
+    background: url(../images/summer.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 100vh;
