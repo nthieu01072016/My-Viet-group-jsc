@@ -129,14 +129,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
     StartTextAnimation(0);
 });
 
-
-//ARROW
-
-$(document).ready(function () {
-    //Tìm tất cả các li có sub-menu và thêm vào nó class has-child
-    $(".sub-menu").parent("li").addClass("has-child");
-})
-
 // SMALL SCREEN - NAVBAR
 
 //      dùng kèm với thư viện này, đã đặt trên thẻ head: <script src="https://code.jquery.com/jquery-3.6.0.js"
@@ -149,7 +141,8 @@ $(document).ready(function () {//khi website load xong thì thực hiện hàm
 })
 
 
-$('.btn-search').click(function () {//khi click vào hình kính lúp thì thực hiện hàm
-    $('.input').toggleClass('active');
-})
+$('#search-icon').click(function () {
+    $(this).toggleClass('fa-times');
+    $('#search-form').toggleClass('active');
+});
 
