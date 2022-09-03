@@ -40,25 +40,25 @@ body {
     flex: 20%;
 }
 
-/* TOP-NAV */
+/* ======================================================NAV====================================================== */
 
-#header #nav {
+#header .nav {
     background-color: #fff;
     flex: 60%;
 }
 
-#header #nav .main-menu {
+#header .nav .main-menu {
     display: flex;
     list-style: none;
     margin-bottom: 0;
 }
 
-#header #nav .main-menu li {
+#header .nav .main-menu li {
     position: relative;
     margin-right: 32px;
 }
 
-/* #header #nav .main-menu li.has-child::after {
+/* #header .nav .main-menu li.has-child::after {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f107";
@@ -70,7 +70,7 @@ body {
 } */
 
 /* Style the links inside the navigation bar */
-#header #nav .main-menu li a {
+#header .nav .main-menu li a {
     color: #222;
     text-align: center;
     margin: 30px 15px;
@@ -81,8 +81,8 @@ body {
     background: none;
 }
 
-#header #nav .main-menu .sub-menu,
-#header #nav .main-menu .sub-menu-child {
+#header .nav .main-menu .sub-menu,
+#header .nav .main-menu .sub-menu-child {
     position: absolute;
     display: none;
     background: #fff;
@@ -90,35 +90,35 @@ body {
     z-index: 2;
 }
 
-#header #nav .main-menu .sub-menu>li>a:first-child {
+#header .nav .main-menu .sub-menu>li>a:first-child {
     margin-top: 0;
 }
 
-#header #nav .main-menu .sub-menu .sub-menu-child {
+#header .nav .main-menu .sub-menu .sub-menu-child {
     left: 163px;
     min-width: 200px;
-    top: 0;
+    top: -30px;
 }
 
-#header #nav .main-menu>li:hover>.sub-menu {
+#header .nav .main-menu>li:hover>.sub-menu {
     display: block;
 }
 
-#header #nav .main-menu>li .sub-menu li:hover .sub-menu-child {
+#header .nav .main-menu>li .sub-menu li:hover .sub-menu-child {
     display: block;
 }
 
 /* Change the color of links on hover */
-#header #nav .main-menu li a:hover {
+#header .nav .main-menu li a:hover {
     color: #dca447;
 }
 
 /* Add a color to the active/current link */
-#header #nav .main-menu li a.active {
+#header .nav .main-menu li a.active {
     border-bottom: 3px solid #dca447;
 }
 
-/* FORM SEARCH */
+/*======================================================FORM SEARCH====================================================== */
 
 #header .icons {
     flex: 20%;
@@ -172,9 +172,9 @@ body {
     cursor: pointer;
 }
 
-/* CONTENT */
+/*======================================================CONTENT====================================================== */
 
-/* BANNER */
+/*======================================================BANNER====================================================== */
 
 #content .banner {
     position: relative;
@@ -214,7 +214,7 @@ body {
     text-align: center;
 }
 
-/* ANIMATE-TEXT */
+/*======================================================ANIMATE-TEXT====================================================== */
 
 #content .banner h1 {
     position: absolute;
@@ -236,7 +236,7 @@ body {
     }
 } */
 
-/* SLOGAN */
+/*======================================================SLOGAN====================================================== */
 
 #content .slogan {
     font-weight: bold;
@@ -295,7 +295,7 @@ body {
     text-decoration: none;
 }
 
-/* SLIDE */
+/*======================================================SLIDE====================================================== */
 
 .box-4 {
     background: #e5d2ae;
@@ -415,7 +415,7 @@ img {
     }
 }
 
-/* DISPLAY-CONTENT */
+/*======================================================DISPLAY-CONTENT====================================================== */
 
 .wp-display-content {
     max-width: 1170px;
@@ -503,7 +503,7 @@ img {
 }
 
 
-/* FOOTER */
+/*======================================================FOOTER====================================================== */
 
 #wp-footer {
     margin-top: 90px;
@@ -576,6 +576,22 @@ img {
 
 @media (max-width:991px) {
 
+    /* #header .nav .main-menu>li:hover>.sub-menu,
+    #header .nav .main-menu>li .sub-menu>li:hover .sub-menu-child {
+        display: none;
+    }
+
+    #header .nav.is-show1 .main-menu>li .sub-menu,
+    #header .nav.is-show2 .main-menu>li .sub-menu>li .sub-menu-child {
+        display: block;
+    }
+
+    #header .nav.is-show1 .main-menu>li .sub-menu>li .sub-menu-child,
+    #header .nav .main-menu>li>.sub-menu {
+        left: 10px;
+        position: relative;
+    } */
+
     #header #toggle {
         display: inline-block;
         order: 2;
@@ -587,7 +603,7 @@ img {
         order: 1;
     }
 
-    #header #nav {
+    #header .nav {
         display: none;
         position: absolute;
         top: 85px;
@@ -596,40 +612,44 @@ img {
         z-index: 3;
     }
 
-    #header #nav .main-menu {
+    #header .nav .main-menu {
         display: block;
     }
 
-    #header #nav .main-menu li {
+    #header .nav .main-menu li {
         margin-right: 0;
     }
 
-    #header #nav .main-menu li a {
+    #header .nav .main-menu li a {
         margin-left: 10px;
         text-align: left;
     }
 
-    #header #nav .main-menu li a.active {
+    #header .nav .main-menu li a.active {
         border-bottom: none;
     }
 
-    #header #nav .main-menu .sub-menu {
+    /* #header .nav .main-menu li a.active {
+        border-bottom: none;
+    }
+
+    #header .nav .main-menu .sub-menu {
         position: relative;
     }
 
-    #header #nav .main-menu .sub-menu .sub-menu {
+    #header .nav .main-menu .sub-menu .sub-menu {
         left: 0;
     }
 
-    #header #nav .main-menu li:hover>.sub-menu {
+    #header .nav .main-menu li:hover>.sub-menu {
         display: block;
         left: 10px;
     }
 
-    #header #nav .main-menu .sub-menu li:hover>.sub-menu {
+    #header .nav .main-menu .sub-menu li:hover>.sub-menu {
         display: block;
         left: 10px;
-    }
+    } */
 
     #header #search-form.active {
         transform: scaleY(1);
@@ -730,6 +750,22 @@ img {
 
 @media (max-width:768px) {
 
+    /* #header .nav .main-menu>li:hover>.sub-menu,
+    #header .nav .main-menu>li .sub-menu>li:hover .sub-menu-child {
+        display: none;
+    }
+
+    #header .nav.is-show1 .main-menu>li .sub-menu,
+    #header .nav.is-show2 .main-menu>li .sub-menu>li .sub-menu-child {
+        display: block;
+    }
+
+    #header .nav.is-show1 .main-menu>li .sub-menu>li .sub-menu-child,
+    #header .nav .main-menu>li>.sub-menu {
+        left: 10px;
+        position: relative;
+    } */
+
     #header #toggle {
         display: inline-block;
         order: 2;
@@ -741,7 +777,7 @@ img {
         order: 1;
     }
 
-    #header #nav {
+    #header .nav {
         display: none;
         position: absolute;
         top: 85px;
@@ -750,40 +786,44 @@ img {
         z-index: 3;
     }
 
-    #header #nav .main-menu {
+    #header .nav .main-menu {
         display: block;
     }
 
-    #header #nav .main-menu li {
+    #header .nav .main-menu li {
         margin-right: 0;
     }
 
-    #header #nav .main-menu li a {
+    #header .nav .main-menu li a {
         margin-left: 10px;
         text-align: left;
     }
 
-    #header #nav .main-menu li a.active {
+    #header .nav .main-menu li a.active {
         border-bottom: none;
     }
 
-    #header #nav .main-menu .sub-menu {
+    /* #header .nav .main-menu li a.active {
+        border-bottom: none;
+    }
+
+    #header .nav .main-menu .sub-menu {
         position: relative;
     }
 
-    #header #nav .main-menu .sub-menu .sub-menu {
+    #header .nav .main-menu .sub-menu .sub-menu {
         left: 0;
     }
 
-    #header #nav .main-menu li:hover>.sub-menu {
+    #header .nav .main-menu li:hover>.sub-menu {
         display: block;
         left: 10px;
     }
 
-    #header #nav .main-menu .sub-menu li:hover>.sub-menu {
+    #header .nav .main-menu .sub-menu li:hover>.sub-menu {
         display: block;
         left: 10px;
-    }
+    } */
 
     #header #search-form.active {
         transform: scaleY(1);
@@ -884,6 +924,29 @@ img {
 
 @media screen and (max-width: 450px) {
 
+    #header .nav .main-menu>li:hover>.sub-menu,
+    #header .nav .main-menu>li .sub-menu>li:hover .sub-menu-child {
+        display: none;
+    }
+
+    #header .nav.is-show1 .main-menu .li1 .sub-menu,
+    #header .nav.is-show2 .main-menu .li1 .sub-menu .li1-1 .sub-menu-child {
+        display: block;
+    }
+
+    #header .nav.is-show3 .main-menu .li2 .sub-menu,
+    #header .nav.is-show4 .main-menu .li2 .sub-menu .li2-1 .sub-menu-child {
+        display: block;
+        position: relative;
+        left: 10px;
+    }
+
+    #header .nav.is-show1 .main-menu>li .sub-menu>li .sub-menu-child,
+    #header .nav .main-menu>li>.sub-menu {
+        left: 10px;
+        position: relative;
+    }
+
     #header #toggle {
         display: inline-block;
         order: 2;
@@ -895,7 +958,7 @@ img {
         order: 1;
     }
 
-    #header #nav {
+    #header .nav {
         display: none;
         position: absolute;
         top: 85px;
@@ -904,40 +967,48 @@ img {
         z-index: 3;
     }
 
-    #header #nav .main-menu {
+    #header .nav .main-menu {
         display: block;
     }
 
-    #header #nav .main-menu li {
+    #header .nav .main-menu li {
         margin-right: 0;
     }
 
-    #header #nav .main-menu li a {
+    #header .nav .main-menu li a {
         margin-left: 10px;
         text-align: left;
     }
 
-    #header #nav .main-menu li a.active {
+    #header .nav .main-menu li a.active {
         border-bottom: none;
     }
 
-    #header #nav .main-menu .sub-menu {
+    #header .nav .main-menu .sub-menu .sub-menu-child {
+        top: 0;
+    }
+
+    /* #header .nav .main-menu li a.active {
+        border-bottom: none;
+    }
+
+    #header .nav .main-menu .sub-menu {
         position: relative;
     }
 
-    #header #nav .main-menu .sub-menu .sub-menu {
+    #header .nav .main-menu .sub-menu .sub-menu {
         left: 0;
     }
 
-    #header #nav .main-menu li:hover>.sub-menu {
+    #header .nav .main-menu li:hover>.sub-menu {
         display: block;
         left: 10px;
     }
 
-    #header #nav .main-menu .sub-menu li:hover>.sub-menu {
+    #header .nav .main-menu .sub-menu li:hover>.sub-menu {
         display: block;
         left: 10px;
-    }
+    } */
 
     #header #search-form.active {
         transform: scaleY(1);
