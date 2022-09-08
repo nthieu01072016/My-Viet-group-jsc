@@ -929,19 +929,19 @@ img {
         display: none;
     }
 
-    #header .nav.is-show1 .main-menu .li1 .sub-menu,
-    #header .nav.is-show2 .main-menu .li1 .sub-menu .li1-1 .sub-menu-child {
+    #header .nav.is-show-1 .main-menu .li-1 .sub-menu,
+    #header .nav.is-show-2 .main-menu .li-1 .sub-menu .li-1-1 .sub-menu-child {
         display: block;
     }
 
-    #header .nav.is-show3 .main-menu .li2 .sub-menu,
-    #header .nav.is-show4 .main-menu .li2 .sub-menu .li2-1 .sub-menu-child {
+    #header .nav.is-show-3 .main-menu .li-2 .sub-menu,
+    #header .nav.is-show-4 .main-menu .li-2 .sub-menu .li-2-1 .sub-menu-child {
         display: block;
         position: relative;
         left: 10px;
     }
 
-    #header .nav.is-show1 .main-menu>li .sub-menu>li .sub-menu-child,
+    #header .nav.is-show-1 .main-menu>li .sub-menu>li .sub-menu-child,
     #header .nav .main-menu>li>.sub-menu {
         left: 10px;
         position: relative;
@@ -969,6 +969,8 @@ img {
 
     #header .nav .main-menu {
         display: block;
+        overflow-y: scroll;
+        height: 50vh;
     }
 
     #header .nav .main-menu li {
