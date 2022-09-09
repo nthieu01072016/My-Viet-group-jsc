@@ -49,10 +49,10 @@ const liChild = document.querySelector(".li-child")
 // const subMenuChild = document.querySelector(".sub-menu-child")
 // const li = document.querySelector(".li")
 liParent.addEventListener("click", (e) => {
-    btnContainer.classList.toggle("is-show1")
+    btnContainer.classList.toggle("is-show-1")
 })
 liChild.addEventListener("click", (e) => {
-    btnContainer.classList.toggle("is-show2")
+    btnContainer.classList.toggle("is-show-2")
 })
 // document.body.addEventListener("click", function (e) {
 //     if (!liChild.contains(e.target) && !e.target.matches("sub-menu-child")) {
@@ -60,13 +60,13 @@ liChild.addEventListener("click", (e) => {
 //     }
 // })
 
-const liParent2 = document.querySelector(".li-parent2")
-const liChild2 = document.querySelector(".li-child2")
+const liParent2 = document.querySelector(".li-parent-2")
+const liChild2 = document.querySelector(".li-child-2")
 liParent2.addEventListener("click", (e) => {
-    btnContainer.classList.toggle("is-show3")
+    btnContainer.classList.toggle("is-show-3")
 })
 liChild2.addEventListener("click", (e) => {
-    btnContainer.classList.toggle("is-show4")
+    btnContainer.classList.toggle("is-show-4")
 })
 
 //======================================================SLIDE======================================================
