@@ -17,203 +17,217 @@
 <body>
     <div id="wrapper">
 
-        <!-- TOP -->
+        <!-- ======================================================TOP====================================================== -->
 
         <div id="header">
+            <div class="container">
+                <div id="top-logo">
+                    <a href=""><img class="banner-image" src="images/earth.png" alt=""></a>
+                </div>
 
-            <div id="top-logo">
-                <a href=""><img class="banner-image" src="images/earth.png" alt=""></a>
+                <div id="toggle">
+                    <i class="fa-solid fa-bars" id="nav-toggle"></i>
+                </div>
+
+                <div class="nav">
+                    <ul class="main-menu">
+                        <li><a class="main-menu-category" href="#home">Home</a></li>
+                        <li class="li-1"><a class="main-menu-category li-parent" href="#news">News</a>
+                            <ul class="sub-menu">
+                                <li><a href="#home">Sub-menu-1</a></li>
+                                <li class="li-1-1"><a class="li-child" href="#home">Sub-menu-2</a>
+                                    <ul class="sub-menu-child">
+                                        <li><a href="#home">Sub-menu-2.1</a></li>
+                                        <li><a href="#home">Sub-menu-2.2</a></li>
+                                        <li><a href="#home">Sub-menu-2.3</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#home">Sub-menu-3</a>
+
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="main-menu-category" href="#contact">Contact</a></li>
+                        <li><a class="main-menu-category" href="#about">About us</a></li>
+                        <li class="li-2"><a class="main-menu-category li-parent-2" href="#home">Support</a>
+                            <ul class="sub-menu">
+                                <li><a href="#home">Sub-menu-1</a></li>
+                                <li class="li-2-1"><a class="li-child-2" href="#home">Sub-menu-2</a>
+                                    <ul class="sub-menu-child">
+                                        <li><a href="#home">Sub-menu-2.1</a></li>
+                                        <li><a href="#home">Sub-menu-2.2</a></li>
+                                        <li><a href="#home">Sub-menu-2.3</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#home">Sub-menu-3</a>
+
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="icons">
+                    <i class="fas fa-search" id="search-icon"></i>
+                </div>
+
+                <form action="#" id="search-form">
+                    <input class="search-input" type="search" name="search" placeholder="Search..">
+                    <label for="search" class="fas fa-search"></label>
+                </form>
             </div>
-
-            <div id="toggle">
-                <i class="fa-solid fa-bars" id="nav-toggle"></i>
-            </div>
-
-            <div class="nav">
-                <ul class="main-menu">
-                    <li><a class="btn" href="#home">Home</a></li>
-                    <li class="li-1"><a class="li-parent btn" href="#news">News</a>
-                        <ul class="sub-menu">
-                            <li><a href="#home">Sub-menu-1</a></li>
-                            <li class="li-1-1"><a class="li-child" href="#home">Sub-menu-2</a>
-                                <ul class="sub-menu-child">
-                                    <li><a href="#home">Sub-menu-2.1</a></li>
-                                    <li><a href="#home">Sub-menu-2.2</a></li>
-                                    <li><a href="#home">Sub-menu-2.3</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#home">Sub-menu-3</a>
-
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a class="btn" href="#contact">Contact</a></li>
-                    <li><a class="btn" href="#about">About us</a></li>
-                    <li class="li-2"><a class="li-parent-2 btn" href="#home">Support</a>
-                        <ul class="sub-menu">
-                            <li><a href="#home">Sub-menu-1</a></li>
-                            <li class="li-2-1"><a class="li-child-2" href="#home">Sub-menu-2</a>
-                                <ul class="sub-menu-child">
-                                    <li><a href="#home">Sub-menu-2.1</a></li>
-                                    <li><a href="#home">Sub-menu-2.2</a></li>
-                                    <li><a href="#home">Sub-menu-2.3</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#home">Sub-menu-3</a>
-
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="icons">
-                <i class="fas fa-search" id="search-icon"></i>
-            </div>
-
-            <form action="#" id="search-form">
-                <input class="search-input" type="search" name="search" placeholder="Search..">
-                <label for="search" class="fas fa-search"></label>
-            </form>
         </div>
 
-        <!-- CONTENT -->
+        <!-- ======================================================CONTENT====================================================== -->
 
         <div id="content">
 
-            <!-- BANNER -->
+            <!-- ======================================================BANNER====================================================== -->
 
             <div class="banner">
                 <div class="banner-text">
                     <h3>Lorem ipsum dolor sit amet.</h3>
                 </div>
-                <h1>story about dogs</h1>
+                <h1 id="text-animate"></h1>
             </div>
 
-            <!-- SLOGAN -->
+            <!-- ======================================================SLOGAN====================================================== -->
 
             <div class="slogan">
-                <div class="box-1">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, assumenda exercitationem odit
-                    minima officiis recusandae itaque saepe sunt eius harum.
-                </div>
-                <div class="box-2">
+                <div class="container">
+                    <div class="box-1">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, assumenda exercitationem odit
+                        minima officiis recusandae itaque saepe sunt eius harum.
+                    </div>
+                    <div class="box-2">
 
-                    <a href="">
-                        <img src="images/medal-icon.png" alt="">
-                        <div>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</div>
-                    </a>
-
-
-                    <a href=""><img src="images/360-icon.png" alt="">
-                        <div>Lorem <br>Lorem ipsum</div>
-                    </a>
+                        <a href="">
+                            <img src="images/medal-icon.png" alt="">
+                            <div>Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor sit amet.</div>
+                        </a>
 
 
-                    <a href=""><img src="images/tablet-64.png" alt="">
-                        <div>Lorem ipsum<br>Lorem ipsum</div>
-                    </a>
+                        <a href=""><img src="images/360-icon.png" alt="">
+                            <div>Lorem <br>Lorem ipsum</div>
+                        </a>
 
 
-                    <a href=""><img src="images/speaker-64.png" alt="">
-                        <div>Lorem<br>Lorem</div>
-                    </a>
+                        <a href=""><img src="images/tablet-64.png" alt="">
+                            <div>Lorem ipsum<br>Lorem ipsum</div>
+                        </a>
 
-                    <a href=""><img src="images/location-update-64.png" alt="">
-                        <div>Lorem ipsum<br>Lorem ipsum</div>
-                    </a>
 
+                        <a href=""><img src="images/speaker-64.png" alt="">
+                            <div>Lorem<br>Lorem</div>
+                        </a>
+
+                        <a href=""><img src="images/location-update-64.png" alt="">
+                            <div>Lorem ipsum<br>Lorem ipsum</div>
+                        </a>
+
+                    </div>
                 </div>
             </div>
 
-            <!-- SLIDE -->
+            <!-- ======================================================SLIDE====================================================== -->
 
             <div class="box-4">
-                <div class="box-4-1">
-                    <div class="box-4-1-1">
-                        <h3>Lorem ipsum dolor sit.</h3>
+                <div class="container">
+                    <div class="box-4-1">
+                        <div class="box-4-1-1">
+                            <h3>Lorem ipsum dolor sit.</h3>
+                        </div>
+                        <div class="box-4-1-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum
+                            maiores,
+                            est modi libero earum nulla nemo dicta sint eius vel possimus dolore odio ut quibusdam.
+                        </div>
+                        <a href="">
+                            <button class="box-4-1-btn">
+                                Lorem ipsum dolor sit.
+                            </button>
+                        </a>
                     </div>
-                    <div class="box-4-1-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum maiores,
-                        est modi libero earum nulla nemo dicta sint eius vel possimus dolore odio ut quibusdam.
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="images/leaves.jpg" class="slideshow-image">
+                            <div class="text">Caption One</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="images/forest-2.jpg" class="slideshow-image">
+                            <div class="text">Caption Two</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="images/sunflower.jpg" class="slideshow-image">
+                            <div class="text">Caption Three</div>
+                        </div>
                     </div>
-                    <a href="">
-                        <button class="box-4-1-btn">
-                            Lorem ipsum dolor sit.
-                        </button>
-                    </a>
-                </div>
-                <div class="slideshow-container">
-                    <div class="mySlides fade">
-                        <div class="numbertext">1 / 3</div>
-                        <img src="images/leaves.jpg" style="width:100%">
-                        <div class="text">Caption One</div>
-                    </div>
-                    <div class="mySlides fade">
-                        <div class="numbertext">2 / 3</div>
-                        <img src="images/forest-2.jpg" style="width:100%">
-                        <div class="text">Caption Two</div>
-                    </div>
-                    <div class="mySlides fade">
-                        <div class="numbertext">3 / 3</div>
-                        <img src="images/sunflower.jpg" style="width:100%">
-                        <div class="text">Caption Three</div>
-                    </div>
-                </div>
 
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
                 </div>
             </div>
 
-            <!-- DISPLAY-CONTENT -->
+            <!-- ======================================================DISPLAY-CONTENT====================================================== -->
 
             <div class="wp-display-content">
-                <div class=display-content>
-                    <div class="image">
-                        <img src="images/forest.jpg" alt="">
-                    </div>
-                    <div class=content>
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <a class="title" href="">Lorem, ipsum dolor.</a>
-                        <div class="excerpt">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, pariatur eligendi reiciendis
-                            quo veritatis doloremque doloribus voluptas nostrum eveniet fuga.
+                <div class="container">
+                    <div class=display-content>
+                        <div class="image">
+                            <img src="images/forest.jpg" alt="">
+                        </div>
+                        <div class=content>
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <a class="title" href="">Lorem, ipsum dolor.</a>
+                            <div class="excerpt">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, pariatur eligendi
+                                reiciendis
+                                quo veritatis doloremque doloribus voluptas nostrum eveniet fuga.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class=display-content>
-                    <div class=image>
-                        <img src="images/road.jpg" alt="">
-                    </div>
-                    <div class=content>
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <a class="title" href="">Lorem, ipsum dolor.</a>
-                        <div class=excerpt>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, pariatur eligendi reiciendis
-                            quo veritatis doloremque doloribus voluptas nostrum eveniet fuga.
+                    <div class=display-content>
+                        <div class=image>
+                            <img src="images/road.jpg" alt="">
+                        </div>
+                        <div class=content>
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <a class="title" href="">Lorem, ipsum dolor.</a>
+                            <div class=excerpt>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, pariatur eligendi
+                                reiciendis
+                                quo veritatis doloremque doloribus voluptas nostrum eveniet fuga.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class=display-content>
-                    <div class=image>
-                        <img src="images/water.jpg" alt="">
-                    </div>
-                    <div class=content>
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <a class="title" href="">Lorem, ipsum dolor.</a>
-                        <div class=excerpt>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, pariatur eligendi reiciendis
-                            quo veritatis doloremque doloribus voluptas nostrum eveniet fuga.
+                    <div class=display-content>
+                        <div class=image>
+                            <img src="images/water.jpg" alt="">
+                        </div>
+                        <div class=content>
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <a class="title" href="">Lorem, ipsum dolor.</a>
+                            <div class=excerpt>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, pariatur eligendi
+                                reiciendis
+                                quo veritatis doloremque doloribus voluptas nostrum eveniet fuga.
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-       
+
+        <!-- ======================================================FOOTER====================================================== -->
+
+
         <div id="wp-footer">
-            <div id="footer">
+            <div class="container">
                 <div id="about-us">
                     <div class="box-head">
                         <a href=""><img class="banner-image" src="images/earth.png" alt=""></a>
@@ -256,6 +270,13 @@
                 <p class="copyright">Copyright © 2022 ABC. All right Reserved</p>
             </div>
         </div>
+
+        <!-- ======================================================SCROLL TO TOP====================================================== -->
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
         <script src="js/script.js"></script>
 </body>
 
