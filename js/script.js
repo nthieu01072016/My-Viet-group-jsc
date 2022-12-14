@@ -182,7 +182,7 @@ function currentSlide(index) {
 const app = document.getElementById("text-animate");
 
 let typewriter = new Typewriter(app, {
-    strings: ["I love coding", "I love laptop too", "so I spend a lot of time", "to learn programming "],
+    strings: ["I love coding", "I love laptop too", "so I spend a lot of time", "to learn programming. "],
     autoStart: true,
     loop: true,
     delay: 60,
