@@ -725,14 +725,9 @@ body {
     }
 
     #content .banner h1 {
-        font-size: 13px;
-        bottom: 70px;
-        text-align: center;
-        width: 100%;
     }
 
-    #content .slogan {
-    }
+    #content .slogan {}
 
     #content .slogan .box-2 {
         flex-direction: column;
@@ -747,16 +742,13 @@ body {
         padding: 13px 288px;
     }
 
-    #content .box-4 .box-4-1 .box-4-1-1 {
-    }
+    #content .box-4 .box-4-1 .box-4-1-1 {}
 
     #content .box-4 .box-4-1 .box-4-1-2 {
         font-size: 16px;
     }
 
-    #content .box-4 .box-4-1 .box-4-1-btn {
-
-    }
+    #content .box-4 .box-4-1 .box-4-1-btn {}
 
     #content .wp-display-content {
         flex-direction: column;
@@ -775,11 +767,9 @@ body {
         flex-direction: column;
     }
 
-    #wp-footer #about-us {
-    }
+    #wp-footer #about-us {}
 
-    #wp-footer #follow-us {
-    }
+    #wp-footer #follow-us {}
 
     #wp-footer #follow-us .box-body .list-social li a {
         font-size: 36px;
@@ -897,14 +887,9 @@ body {
     }
 
     #content .banner h1 {
-        font-size: 13px;
-        bottom: 70px;
-        text-align: center;
-        width: 100%;
     }
 
-    #content .slogan {
-    }
+    #content .slogan {}
 
     #content .slogan .box-2 {
         flex-direction: column;
@@ -919,16 +904,13 @@ body {
         padding: 13px 198px;
     }
 
-    #content .box-4 .box-4-1 .box-4-1-1 {
-    }
+    #content .box-4 .box-4-1 .box-4-1-1 {}
 
     #content .box-4 .box-4-1 .box-4-1-2 {
         font-size: 16px;
     }
 
-    #content .box-4 .box-4-1 .box-4-1-btn {
-
-    }
+    #content .box-4 .box-4-1 .box-4-1-btn {}
 
     #content .wp-display-content {
         flex-direction: column;
@@ -947,11 +929,9 @@ body {
         flex-direction: column;
     }
 
-    #wp-footer #about-us {
-    }
+    #wp-footer #about-us {}
 
-    #wp-footer #follow-us {
-    }
+    #wp-footer #follow-us {}
 
     #wp-footer #follow-us .box-body .list-social li a {
         font-size: 36px;
@@ -964,6 +944,10 @@ body {
 
     .container {
         width: 370px;
+    }
+
+    h3 {
+        font-size: 23px;
     }
 
     #header .nav .main-menu>li:hover>.sub-menu,
@@ -1068,7 +1052,7 @@ body {
 
     #content .banner {
         margin-top: 0;
-        aspect-ratio:2/3;
+        aspect-ratio: 2/3;
         min-height: 450px;
     }
 
@@ -1086,14 +1070,13 @@ body {
     }
 
     #content .banner h1 {
-        font-size: 13px;
-        bottom: 70px;
+        font-size: 18px;
+        bottom: 60px;
         text-align: center;
         width: 100%;
     }
 
-    #content .slogan {
-    }
+    #content .slogan {}
 
     #content .slogan .box-2 {
         flex-direction: column;
@@ -1108,16 +1091,13 @@ body {
         padding: 13px;
     }
 
-    #content .box-4 .box-4-1 .box-4-1-1 {
-    }
+    #content .box-4 .box-4-1 .box-4-1-1 {}
 
     #content .box-4 .box-4-1 .box-4-1-2 {
         font-size: 16px;
     }
 
-    #content .box-4 .box-4-1 .box-4-1-btn {
-
-    }
+    #content .box-4 .box-4-1 .box-4-1-btn {}
 
     #content .wp-display-content {
         flex-direction: column;
@@ -1128,7 +1108,7 @@ body {
         margin-top: 20px;
     }
 
-    .wp-display-content .container{
+    .wp-display-content .container {
         display: block;
     }
 
@@ -1140,15 +1120,13 @@ body {
         flex-direction: column;
     }
 
-    #wp-footer .container{
+    #wp-footer .container {
         display: block;
     }
 
-    #wp-footer #about-us {
-    }
+    #wp-footer #about-us {}
 
-    #wp-footer #follow-us {
-    }
+    #wp-footer #follow-us {}
 
     #wp-footer #follow-us .box-body .list-social li a {
         font-size: 36px;
