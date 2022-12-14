@@ -182,7 +182,7 @@ function currentSlide(index) {
 const app = document.getElementById("text-animate");
 
 let typewriter = new Typewriter(app, {
-    strings: ["I love coding", "I love laptop too", "so I spend a lot of time learning programming "],
+    strings: ["I love coding", "I love laptop too", "so I spend a lot of time", "to learn programming "],
     autoStart: true,
     loop: true,
     delay: 60,
@@ -247,7 +247,7 @@ function scrollFunction() {
 
         document.getElementById("search-icon").style.margin = "22px 0";
 
-        } else {
+    } else {
 
         document.querySelector(".banner-image").style.height = "85px";
 
