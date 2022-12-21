@@ -41,10 +41,7 @@ html {
     font-family: "Poppins", sans-serif;
     -ms-scroll-chaining: none;
     overscroll-behavior: contain;
-    font-size: 17px;
-}
-
-input {
+    font {
     display: block;
     width: 100%;
     font: inherit;
@@ -272,7 +269,7 @@ body {
     bottom: 11%;
     left: 50%;
     transform: translateX(-50%);
-    min-width: 100%;
+    max-width: 100%;
 }
 
 
