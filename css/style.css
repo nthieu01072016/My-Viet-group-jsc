@@ -1088,6 +1088,7 @@ body {
 
     #content .banner .banner-text-wrap{
         bottom: 6%;
+        padding: 0 10px;
     }
     #content .banner .banner-text {
         line-height: 39px;
